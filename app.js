@@ -10,4 +10,4 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen("app listen on port" ,3000);
+app.listen(3000);
