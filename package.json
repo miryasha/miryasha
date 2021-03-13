@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/yasha6081/miryasha.git"
   },
-  "keywords": ["yasha"],
+  "keywords": [
+    "yasha"
+  ],
   "author": "Miryasha",
   "license": "ISC",
   "bugs": {
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/yasha6081/miryasha#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
