@@ -8,23 +8,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-function passwordProtected(req, res, next){
-  res.set('WWW-Authenticate','Basic realm="Dash Board"')
-  //console.log(req.headers.authorization)
-  
-  if (req.headers.authorization == "Basic SkVUWTQ1NzYzJCMmKiMlWUhodmZKREZTRmRndnNkZnNHYTMzNTR5NjQ1Oj8iTExLUEZQR1NkZmdwbzQ5cTh3ZXBxazc4XiUkJCMjZmd1Jmlsbm1LTEs=") {
-    next()
 
-  }else{
-    res.status(401).send("Authentication required")
-  }
-}
-
-app.use(passwordProtected)
 
 // Static directory to be served
-app.use(express.static("./app/public"));
-
+app.use(express.static('public'));
+app.set('views', 'views');
+app.set('view engine', 'ejs')
 
 
 // Routes
