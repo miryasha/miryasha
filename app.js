@@ -1,5 +1,4 @@
 const express = require("express");
-
 const controllers = require("./app/controllers");
 
 const app = express();
@@ -12,16 +11,16 @@ app.use(express.json());
 
 // Static directory to be served
 app.use(express.static('/app/views'));
-app.set('views', 'views');
-app.set('view engine', 'ejs')
+// app.set('views', 'views');
+// app.set('view engine', 'ejs')
 
 
 // Routes
 // =============================================================
-app.use("/", controllers.landingPage);
-// app.use("/albums", controllers.albums);
-// app.use("/certificates", controllers.certificates);
-// app.use("/login", controllers.login);
+app.use("/", controllers.landignPage);
+app.use("/albums", controllers.albume);
+app.use("/certificates", controllers.certificates);
+app.use("/login", controllers.login);
 
 
 

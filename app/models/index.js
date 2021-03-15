@@ -1,4 +1,4 @@
-const connection = require('../cofig/dbConnection');
+const connection = require('../config/db.connnection');
 const LandingPage = require('./landingPage.model');
 const Albume = require('./albume.model');
 const Certificates = require('./certificates.model');
