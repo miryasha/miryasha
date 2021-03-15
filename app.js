@@ -10,9 +10,6 @@ app.set('views', 'views');
 app.set('view engine', 'ejs')
 
 
-app.get('/', (req, res) => {
-    res.render('albums')
-});
 
 
 // Starts the server to begin listening
